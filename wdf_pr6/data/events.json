@@ -1,0 +1,152 @@
+[
+    {
+        "id": 1,
+        "date": "15",
+        "month": "SEP",
+        "title": "Web Development Workshop",
+        "description": "Learn the fundamentals of modern web development using HTML, CSS and JavaScript.",
+        "location": "Computer Lab",
+        "time": "10:00 AM",
+        "category": "Workshop"
+    },
+    {
+        "id": 2,
+        "date": "22",
+        "month": "SEP",
+        "title": "Programming Competition",
+        "description": "Test your coding and problem-solving skills in a competitive environment.",
+        "location": "Main Auditorium",
+        "time": "11:00 AM",
+        "category": "Competition"
+    },
+    {
+        "id": 3,
+        "date": "05",
+        "month": "OCT",
+        "title": "Career Guidance Seminar",
+        "description": "Get career advice and learn about opportunities after graduation.",
+        "location": "Seminar Hall",
+        "time": "2:00 PM",
+        "category": "Seminar"
+    },
+    {
+        "id": 4,
+        "date": "18",
+        "month": "OCT",
+        "title": "Student Project Exhibition",
+        "description": "Present innovative projects and ideas created by students.",
+        "location": "College Hall",
+        "time": "10:30 AM",
+        "category": "Exhibition"
+    },
+    {
+        "id": 5,
+        "date": "25",
+        "month": "OCT",
+        "title": "Python Programming Workshop",
+        "description": "Learn Python programming fundamentals through practical examples.",
+        "location": "Computer Lab 2",
+        "time": "9:30 AM",
+        "category": "Workshop"
+    },
+    {
+        "id": 6,
+        "date": "02",
+        "month": "NOV",
+        "title": "Hackathon 2026",
+        "description": "Build innovative technology solutions with your team during this exciting hackathon.",
+        "location": "Innovation Centre",
+        "time": "8:00 AM",
+        "category": "Competition"
+    },
+    {
+        "id": 7,
+        "date": "08",
+        "month": "NOV",
+        "title": "AI and Machine Learning Seminar",
+        "description": "Explore the basics of artificial intelligence and machine learning.",
+        "location": "Seminar Hall",
+        "time": "1:00 PM",
+        "category": "Seminar"
+    },
+    {
+        "id": 8,
+        "date": "15",
+        "month": "NOV",
+        "title": "Photography Exhibition",
+        "description": "Explore creative photography submitted by students across the campus.",
+        "location": "College Gallery",
+        "time": "11:00 AM",
+        "category": "Exhibition"
+    },
+    {
+        "id": 9,
+        "date": "22",
+        "month": "NOV",
+        "title": "Database Management Workshop",
+        "description": "Learn database concepts, SQL queries and database design.",
+        "location": "Computer Lab 1",
+        "time": "10:00 AM",
+        "category": "Workshop"
+    },
+    {
+        "id": 10,
+        "date": "30",
+        "month": "NOV",
+        "title": "Public Speaking Competition",
+        "description": "Improve your communication skills and compete in a public speaking event.",
+        "location": "Main Auditorium",
+        "time": "12:00 PM",
+        "category": "Competition"
+    },
+    {
+        "id": 11,
+        "date": "05",
+        "month": "DEC",
+        "title": "Higher Education Seminar",
+        "description": "Learn about postgraduate study options and higher education opportunities.",
+        "location": "Seminar Hall",
+        "time": "2:30 PM",
+        "category": "Seminar"
+    },
+    {
+        "id": 12,
+        "date": "10",
+        "month": "DEC",
+        "title": "Student Innovation Expo",
+        "description": "Discover creative ideas and innovative solutions developed by students.",
+        "location": "College Hall",
+        "time": "10:00 AM",
+        "category": "Exhibition"
+    },
+    {
+        "id": 13,
+        "date": "15",
+        "month": "DEC",
+        "title": "JavaScript Workshop",
+        "description": "Learn JavaScript fundamentals, DOM manipulation and event handling.",
+        "location": "Computer Lab 3",
+        "time": "9:00 AM",
+        "category": "Workshop"
+    },
+    {
+        "id": 14,
+        "date": "20",
+        "month": "DEC",
+        "title": "Coding Challenge",
+        "description": "Solve programming problems and demonstrate your algorithmic thinking.",
+        "location": "Computer Lab 1",
+        "time": "11:30 AM",
+        "category": "Competition"
+    },
+    {
+        "id": 15,
+        "date": "28",
+        "month": "DEC",
+        "title": "Entrepreneurship Seminar",
+        "description": "Learn how to develop business ideas and understand the startup ecosystem.",
+        "location": "Seminar Hall",
+        "time": "3:00 PM",
+        "category": "Seminar"
+    }
+]
