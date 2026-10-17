@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Student Hub - Students</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+    <div class="logo">
+
+        <h1>Student Hub</h1>
+
+    </div>
+
+
+    <!-- Hamburger Button -->
+
+    <button
+        class="hamburger"
+        id="hamburger"
+        type="button"
+        aria-label="Open navigation menu"
+    >
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </button>
+
+
+    <!-- Navigation -->
+
+    <nav id="mainNav">
+
+        <ul>
+
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="dashboard.php">
+                    Courses
+                </a>
+            </li>
+
+             <li>
+                <a href="admin.php" aria-current="page">
+                    Admin
+                </a>
+            </li>
+
+            <li>
+                <a href="events.html">
+                    Events
+                </a>
+            </li>
+
+            <li>
+                <a href="students.html" class="active">
+                    Students
+                </a>
+            </li>
+
+            <li>
+                <a href="resources.html">
+                    Resources
+                </a>
+            </li>
+
+            <li>
+                    <a href="faq.html">FAQ</a>
+                </li>
+
+            <li>
+                <a href="about.html">
+                    About
+                </a>
+            </li>
+
+            <li>
+                <a href="profile.html" aria-current="page">
+                    Profile
+                </a>
+            </li>
+
+            <li>
+                <a href="login.html">
+                    Login
+                </a>
+            </li>
+
+            <li>
+                <a href="registration.html">
+                    Register
+                </a>
+            </li>
+                <li><a href="../php/logout.php">Logout</a></li>
+            </ul>
+
+    </nav>
+
+</header>
+
+
+<!-- ================= MAIN ================= -->
+
+<main>
+
+
+    <!-- ================= PAGE HEADER ================= -->
+
+    <section class="page-header">
+
+        <h2>Student Profiles</h2>
+
+        <p>
+            Explore student profiles and find students
+            by name, course, semester and CGPA.
+        </p>
+
+    </section>
+
+
+    <!-- ================= STUDENT CONTROLS ================= -->
+
+    <section class="student-controls">
+
+
+        <!-- Search -->
+
+        <div class="student-search">
+
+            <label for="searchInput">
+                Search Students
+            </label>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search by name, email, course or city..."
+            >
+
+        </div>
+
+
+        <!-- Course Filter -->
+
+        <div class="student-filter">
+
+            <label for="courseFilter">
+                Course
+            </label>
+
+            <select id="courseFilter">
+
+                <option value="all">
+                    All Courses
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <!-- Semester Filter -->
+
+        <div class="student-filter">
+
+            <label for="semesterFilter">
+                Semester
+            </label>
+
+            <select id="semesterFilter">
+
+                <option value="all">
+                    All Semesters
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <!-- Sorting -->
+
+        <div class="student-sort">
+
+            <label for="sortSelect">
+                Sort
+            </label>
+
+            <select id="sortSelect">
+
+                <option value="default">
+                    Default
+                </option>
+
+                <option value="name-asc">
+                    Name A-Z
+                </option>
+
+                <option value="name-desc">
+                    Name Z-A
+                </option>
+
+                <option value="cgpa-high">
+                    CGPA High-Low
+                </option>
+
+                <option value="cgpa-low">
+                    CGPA Low-High
+                </option>
+
+            </select>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= LOADING ================= -->
+
+    <div
+        id="loading"
+        class="events-message"
+    >
+        Loading students...
+    </div>
+
+
+    <!-- ================= ERROR ================= -->
+
+    <div
+        id="error"
+        class="events-message error"
+        style="display: none;"
+    >
+    </div>
+
+
+    <!-- ================= STUDENT CONTAINER ================= -->
+
+    <section
+        class="student-container"
+        id="studentContainer"
+    >
+    </section>
+
+
+    <!-- ================= NO RESULTS ================= -->
+
+    <div
+        id="noResults"
+        class="events-message"
+        style="display: none;"
+    >
+        No students found.
+    </div>
+
+
+    <!-- ================= PAGINATION ================= -->
+
+    <div
+        id="pagination"
+        class="pagination"
+    >
+    </div>
+
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <p>
+        &copy; 2026 Student Hub. All rights reserved.
+    </p>
+
+</footer>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script src="../js/script.js"></script>
+
+<script src="../js/students.js"></script>
+
+
+</body>
+
+</html>

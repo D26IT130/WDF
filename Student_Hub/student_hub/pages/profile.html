@@ -1,0 +1,349 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Hub - Profile</title>
+
+<link rel="stylesheet" href="../css/style1.css">
+
+</head> <body>
+<!-- ================= HEADER ================= -->
+
+<header>
+
+    <div class="logo">
+        <h1>Student Hub</h1>
+    </div>
+
+    <button
+        class="hamburger"
+        id="hamburger"
+        type="button"
+        aria-label="Open navigation menu"
+    >
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+     <nav id="mainNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.php">Dashboard</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="contact.html" aria-current="page">Contact</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="registration.html">Register</a></li>
+                <li><a href="../php/logout.php">Logout</a></li>
+            </ul>
+        </nav>
+</header>
+
+
+<!-- ================= MAIN CONTENT ================= -->
+
+<main>
+
+    <!-- ================= PROFILE HEADER ================= -->
+
+    <section class="dashboard-header">
+
+        <span class="hero-badge">
+            👤 My Profile
+        </span>
+
+        <h2>
+            Student Profile
+        </h2>
+
+        <p>
+            View and manage your Student Hub account information.
+        </p>
+
+    </section>
+
+
+    <!-- ================= PROFILE INFORMATION ================= -->
+
+    <section class="profile-section" aria-labelledby="profile-heading">
+
+        <h2 id="profile-heading">
+            Personal Information
+        </h2>
+
+        <div class="feature-container">
+
+            <article class="feature-card">
+
+                <div class="feature-icon">
+                    👤
+                </div>
+
+                <h3>
+                    Student Name
+                </h3>
+
+                <p>
+                    John Student
+                </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+                <div class="feature-icon">
+                    📧
+                </div>
+
+                <h3>
+                    Email Address
+                </h3>
+
+                <p>
+                    student@example.com
+                </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+                <div class="feature-icon">
+                    🎓
+                </div>
+
+                <h3>
+                    Student ID
+                </h3>
+
+                <p>
+                    SH2026001
+                </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+                <div class="feature-icon">
+                    📚
+                </div>
+
+                <h3>
+                    Department
+                </h3>
+
+                <p>
+                    Computer Science
+                </p>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ACADEMIC DETAILS ================= -->
+
+    <section class="dashboard-section" aria-labelledby="academic-heading">
+
+        <h2 id="academic-heading">
+            Academic Details
+        </h2>
+
+        <div class="feature-container">
+
+            <article class="feature-card">
+
+                <h3>
+                    Program
+                </h3>
+
+                <p>
+                    Bachelor of Computer Applications
+                </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+                <h3>
+                    Semester
+                </h3>
+
+                <p>
+                    Semester 5
+                </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+                <h3>
+                    Academic Year
+                </h3>
+
+                <p>
+                    2026
+                </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+                <h3>
+                    Overall Progress
+                </h3>
+
+                <p>
+                    72%
+                </p>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= EDIT PROFILE FORM ================= -->
+
+    <section class="profile-form-section" aria-labelledby="edit-profile-heading">
+
+        <h2 id="edit-profile-heading">
+            Edit Profile
+        </h2>
+
+        <form action="#" method="post">
+
+            <div class="form-group">
+
+                <label for="fullName">
+                    Full Name
+                </label>
+
+                <input
+                    type="text"
+                    id="fullName"
+                    name="fullName"
+                    value="John Student"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="email">
+                    Email Address
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    value="student@example.com"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="phone">
+                    Phone Number
+                </label>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Enter phone number"
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="bio">
+                    About Me
+                </label>
+
+                <textarea
+                    id="bio"
+                    name="bio"
+                    rows="5"
+                    placeholder="Write something about yourself..."
+                ></textarea>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="btn"
+            >
+                Save Changes
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- ================= ACCOUNT ACTIONS ================= -->
+
+    <section class="home-cta">
+
+        <div>
+
+            <h2>
+                Account Settings
+            </h2>
+
+            <p>
+                Manage your account and Student Hub activities.
+            </p>
+
+        </div>
+
+        <div class="hero-buttons">
+
+            <a href="dashboard.html" class="btn">
+                Dashboard
+            </a>
+
+            <a href="index.html" class="btn btn-outline">
+                Logout
+            </a>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <p>
+        &copy; 2026 Student Hub. All rights reserved.
+    </p>
+
+</footer>
+
+
+<script src="../js/script.js"></script>
+
+</body> </html>

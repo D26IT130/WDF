@@ -1,0 +1,29 @@
+[
+    {
+        "name": "Piyush Chauhan",
+        "email": "piyush@gmail.com",
+        "mobile": "1234567890",
+        "course_id": 1,
+        "year": 3,
+        "gender": "Male",
+        "created_at": "2026-10-07 09:06:56"
+    },
+    {
+        "name": "Aaryan Bhandari",
+        "email": "aaryan@gmail.com",
+        "mobile": "0987654321",
+        "course_id": 1,
+        "year": 3,
+        "gender": "Male",
+        "created_at": "2026-10-07 09:08:42"
+    },
+    {
+        "name": "Virat Kohli",
+        "email": "kohli18@gmail.com",
+        "mobile": "0987654312",
+        "course_id": 2,
+        "year": 4,
+        "gender": "Male",
+        "created_at": "2026-10-07 09:09:35"
+    }
+]

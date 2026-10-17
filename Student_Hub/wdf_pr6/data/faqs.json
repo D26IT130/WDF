@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "question": "What is Student Hub?",
+        "answer": "Student Hub is a platform where students can access courses, study notes, events, and useful learning resources in one place.",
+        "category": "General"
+    },
+    {
+        "id": 2,
+        "question": "How can I access the courses?",
+        "answer": "Go to the Courses section from the navigation menu and explore the available courses.",
+        "category": "Courses"
+    },
+    {
+        "id": 3,
+        "question": "Where can I find study notes?",
+        "answer": "You can find study materials and notes by visiting the Notes section from the navigation menu.",
+        "category": "Notes"
+    },
+    {
+        "id": 4,
+        "question": "How can I know about upcoming events?",
+        "answer": "Visit the Events section to view upcoming college events, workshops, seminars, and student activities.",
+        "category": "Events"
+    },
+    {
+        "id": 5,
+        "question": "Do I need an account to use Student Hub?",
+        "answer": "Some features are available without an account, while additional student features may require you to log in.",
+        "category": "Account"
+    },
+    {
+        "id": 6,
+        "question": "How do I register for an event?",
+        "answer": "Open the Events page, select the event you are interested in, and follow the registration instructions.",
+        "category": "Events"
+    },
+    {
+        "id": 7,
+        "question": "Can I access Student Hub on my mobile phone?",
+        "answer": "Yes. Student Hub is designed to be responsive and can be accessed using smartphones, tablets, laptops, and desktop computers.",
+        "category": "General"
+    },
+    {
+        "id": 8,
+        "question": "How can I register as a student?",
+        "answer": "Click the Register option in the navigation menu and complete the registration form.",
+        "category": "Account"
+    },
+    {
+        "id": 9,
+        "question": "How can I log in to my account?",
+        "answer": "Click the Login option in the navigation menu and enter your registered credentials.",
+        "category": "Account"
+    },
+    {
+        "id": 10,
+        "question": "Are the study resources free?",
+        "answer": "Resources provided through Student Hub can be accessed according to the availability and access rules of each resource.",
+        "category": "Resources"
+    },
+    {
+        "id": 11,
+        "question": "Can I search for specific courses?",
+        "answer": "Yes. Use the search and filtering options available on the Courses page to find relevant courses.",
+        "category": "Courses"
+    },
+    {
+        "id": 12,
+        "question": "Where can I find project resources?",
+        "answer": "Visit the Resources section to explore useful materials for projects, learning, and career development.",
+        "category": "Resources"
+    },
+    {
+        "id": 13,
+        "question": "Can I participate in student competitions?",
+        "answer": "Yes. Check the Events section regularly for competitions and other student activities.",
+        "category": "Events"
+    },
+    {
+        "id": 14,
+        "question": "How can I contact Student Hub?",
+        "answer": "You can visit the About page to find information about Student Hub and available contact options.",
+        "category": "General"
+    },
+    {
+        "id": 15,
+        "question": "What should I do if I forget my password?",
+        "answer": "Use the password recovery option on the Login page or contact the Student Hub administrator for assistance.",
+        "category": "Account"
+    }
+]

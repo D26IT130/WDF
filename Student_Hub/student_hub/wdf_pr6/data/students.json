@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "name": "Aarav Patel",
+    "email": "aarav.patel@example.com",
+    "course": "Computer Engineering",
+    "semester": 5,
+    "city": "Ahmedabad",
+    "country": "India",
+    "cgpa": 8.7
+  },
+  {
+    "id": 2,
+    "name": "Diya Shah",
+    "email": "diya.shah@example.com",
+    "course": "Information Technology",
+    "semester": 4,
+    "city": "Vadodara",
+    "country": "India",
+    "cgpa": 9.1
+  },
+  {
+    "id": 3,
+    "name": "Rohan Mehta",
+    "email": "rohan.mehta@example.com",
+    "course": "Mechanical Engineering",
+    "semester": 6,
+    "city": "Surat",
+    "country": "India",
+    "cgpa": 7.8
+  },
+  {
+    "id": 4,
+    "name": "Anaya Desai",
+    "email": "anaya.desai@example.com",
+    "course": "Computer Engineering",
+    "semester": 3,
+    "city": "Rajkot",
+    "country": "India",
+    "cgpa": 8.9
+  },
+  {
+    "id": 5,
+    "name": "Vivaan Joshi",
+    "email": "vivaan.joshi@example.com",
+    "course": "Civil Engineering",
+    "semester": 5,
+    "city": "Ahmedabad",
+    "country": "India",
+    "cgpa": 7.5
+  },
+  {
+    "id": 6,
+    "name": "Myra Patel",
+    "email": "myra.patel@example.com",
+    "course": "Information Technology",
+    "semester": 2,
+    "city": "Anand",
+    "country": "India",
+    "cgpa": 8.4
+  },
+  {
+    "id": 7,
+    "name": "Arjun Shah",
+    "email": "arjun.shah@example.com",
+    "course": "Electrical Engineering",
+    "semester": 7,
+    "city": "Vadodara",
+    "country": "India",
+    "cgpa": 8.1
+  },
+  {
+    "id": 8,
+    "name": "Ishita Mehta",
+    "email": "ishita.mehta@example.com",
+    "course": "Computer Engineering",
+    "semester": 6,
+    "city": "Surat",
+    "country": "India",
+    "cgpa": 9.3
+  },
+  {
+    "id": 9,
+    "name": "Kabir Desai",
+    "email": "kabir.desai@example.com",
+    "course": "Mechanical Engineering",
+    "semester": 4,
+    "city": "Rajkot",
+    "country": "India",
+    "cgpa": 7.9
+  },
+  {
+    "id": 10,
+    "name": "Sara Joshi",
+    "email": "sara.joshi@example.com",
+    "course": "Civil Engineering",
+    "semester": 3,
+    "city": "Anand",
+    "country": "India",
+    "cgpa": 8.6
+  },
+  {
+    "id": 11,
+    "name": "Yash Patel",
+    "email": "yash.patel@example.com",
+    "course": "Information Technology",
+    "semester": 6,
+    "city": "Ahmedabad",
+    "country": "India",
+    "cgpa": 8.8
+  },
+  {
+    "id": 12,
+    "name": "Kiara Shah",
+    "email": "kiara.shah@example.com",
+    "course": "Electrical Engineering",
+    "semester": 5,
+    "city": "Vadodara",
+    "country": "India",
+    "cgpa": 9.0
+  },
+  {
+    "id": 13,
+    "name": "Reyansh Mehta",
+    "email": "reyansh.mehta@example.com",
+    "course": "Computer Engineering",
+    "semester": 8,
+    "city": "Surat",
+    "country": "India",
+    "cgpa": 9.5
+  },
+  {
+    "id": 14,
+    "name": "Avni Desai",
+    "email": "avni.desai@example.com",
+    "course": "Civil Engineering",
+    "semester": 7,
+    "city": "Rajkot",
+    "country": "India",
+    "cgpa": 8.2
+  },
+  {
+    "id": 15,
+    "name": "Dhruv Joshi",
+    "email": "dhruv.joshi@example.com",
+    "course": "Mechanical Engineering",
+    "semester": 2,
+    "city": "Anand",
+    "country": "India",
+    "cgpa": 7.7
+  }
+]

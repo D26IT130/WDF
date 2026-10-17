@@ -1,0 +1,450 @@
+<?php
+require_once __DIR__ . '/../php/auth.php';
+requireRole('student');
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Hub - Home</title>
+
+    <link rel="stylesheet" href="../css/style1.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="logo">
+            <h1>Student Hub</h1>
+        </div>
+
+        <!-- Hamburger Button -->
+        <button
+            class="hamburger"
+            id="hamburger"
+            aria-label="Open navigation menu"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <!-- Navigation -->
+        <nav id="mainNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.php">Dashboard</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="about.php">About</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="contact.html" aria-current="page">Contact</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="registration.html">Register</a></li>
+                <li><a href="../php/logout.php">Logout</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <!-- ================= NOTIFICATION BANNER ================= -->
+
+    <div
+        class="notification-banner"
+        id="notificationBanner"
+    >
+
+        <div class="notification-content">
+
+            <span class="notification-icon">📢</span>
+
+            <div class="notification-text">
+                <strong>Workshop Registration is Open!</strong>
+                <span>Register now and reserve your seat.</span>
+            </div>
+
+            <a
+                href="events.html"
+                class="notification-btn"
+            >
+                Register Now →
+            </a>
+
+        </div>
+
+        <button
+            type="button"
+            class="notification-close"
+            id="notificationClose"
+            aria-label="Close notification"
+        >
+            ×
+        </button>
+
+    </div>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main>
+
+        <!-- ================= HERO SECTION ================= -->
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <span class="hero-badge">
+                    🎓 Welcome to Student Hub
+                </span>
+
+                <h2 id="heroHeading">
+                    Welcome to
+                    <span>Student Hub</span>
+                </h2>
+
+                <p>
+                    Your one-stop platform for courses, study notes,
+                    events, resources, and student activities.
+                    Learn, explore, and grow with Student Hub.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a
+                        href="courses.html"
+                        class="btn"
+                    >
+                        Explore Courses
+                    </a>
+
+                    <a
+                        href="notes.html"
+                        class="btn btn-outline"
+                    >
+                        Study Notes
+                    </a>
+
+                </div>
+
+                <!-- Action Buttons -->
+
+                <div class="action-buttons">
+
+                    <button type="button" id="changeHeadingBtn">
+                        Change Heading
+                    </button>
+
+                    <button type="button" id="openAnnouncementBtn">
+                        Open Announcement
+                    </button>
+
+                    <button type="button" id="themeBtn" class="theme-btn">
+                        Dark Theme
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= HERO IMAGE SLIDER ================= -->
+
+            <div class="hero-image">
+
+                <div class="hero-slider">
+
+                    <img
+                        class="hero-slide active"
+                        src="../StudentHub.png"
+                        alt="Students studying together"
+                    >
+
+                    <img
+                        class="hero-slide"
+                        src="../course_image.png"
+                        alt="Students learning"
+                    >
+
+                    <img
+                        class="hero-slide"
+                        src="../events_image.png"
+                        alt="Students participating in events"
+                    >
+
+                    <button
+                        type="button"
+                        class="hero-slider-btn hero-prev"
+                        id="heroPrev"
+                        aria-label="Previous slide"
+                    >
+                        ❮
+                    </button>
+
+                    <button
+                        type="button"
+                        class="hero-slider-btn hero-next"
+                        id="heroNext"
+                        aria-label="Next slide"
+                    >
+                        ❯
+                    </button>
+
+                </div>
+
+
+                <!-- Slider Dots -->
+
+                <div class="hero-slider-dots">
+
+                    <button
+                        type="button"
+                        class="hero-dot active"
+                        data-slide="0"
+                        aria-label="Slide 1"
+                    ></button>
+
+                    <button
+                        type="button"
+                        class="hero-dot"
+                        data-slide="1"
+                        aria-label="Slide 2"
+                    ></button>
+
+                    <button
+                        type="button"
+                        class="hero-dot"
+                        data-slide="2"
+                        aria-label="Slide 3"
+                    ></button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FEATURES ================= -->
+
+        <section class="features">
+
+            <h2>What We Offer</h2>
+
+            <p class="section-description">
+                Everything you need to make your student life
+                easier and more productive.
+            </p>
+
+
+            <div class="feature-container">
+
+                <!-- Courses -->
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        📚
+                    </div>
+
+                    <h3>Courses</h3>
+
+                    <p>
+                        Explore different courses and improve your
+                        knowledge and skills.
+                    </p>
+
+                    <a href="courses.html">
+                        View Courses →
+                    </a>
+
+                </div>
+
+
+                <!-- Notes -->
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        📝
+                    </div>
+
+                    <h3>Study Notes</h3>
+
+                    <p>
+                        Find useful notes and study materials
+                        for your subjects.
+                    </p>
+
+                    <a href="notes.html">
+                        View Notes →
+                    </a>
+
+                </div>
+
+
+                <!-- Events -->
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        📅
+                    </div>
+
+                    <h3>Events</h3>
+
+                    <p>
+                        Stay updated with upcoming college and
+                        student events.
+                    </p>
+
+                    <a href="events.html">
+                        View Events →
+                    </a>
+
+                </div>
+
+
+                <!-- Resources -->
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        💼
+                    </div>
+
+                    <h3>Resources</h3>
+
+                    <p>
+                        Discover useful resources for learning,
+                        projects, and career development.
+                    </p>
+
+                    <a href="resources.html">
+                        View Resources →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CALL TO ACTION ================= -->
+
+        <section class="home-cta">
+
+            <div>
+
+                <h2>
+                    Ready to Start Learning?
+                </h2>
+
+                <p>
+                    Explore our courses and resources today.
+                </p>
+
+            </div>
+
+            <a
+                href="login.html"
+                class="btn"
+            >
+                Get Started
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= ANNOUNCEMENT MODAL ================= -->
+
+    <div
+        class="modal-overlay"
+        id="announcementModal"
+    >
+
+        <div class="modal-box">
+
+            <button
+                type="button"
+                class="modal-close"
+                id="closeModalBtn"
+                aria-label="Close announcement"
+            >
+                ×
+            </button>
+
+            <div class="modal-icon">
+                📢
+            </div>
+
+            <h2>
+                Workshop Registration is Open!
+            </h2>
+
+            <p>
+                Join our upcoming workshop and learn new skills
+                with fellow students.
+            </p>
+
+            <div class="modal-details">
+
+                <p>
+                    <strong>📅 Date:</strong>
+                    25 August 2026
+                </p>
+
+                <p>
+                    <strong>⏰ Time:</strong>
+                    10:00 AM
+                </p>
+
+                <p>
+                    <strong>📍 Location:</strong>
+                    Student Hub Auditorium
+                </p>
+
+            </div>
+
+            <a
+                href="events.html"
+                class="modal-btn"
+            >
+                Register Now →
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+            &copy; 2026 Student Hub. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Hub - Feedback</title>
+
+    <link rel="stylesheet" href="../css/style1.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="logo">
+            <h1>Student Hub</h1>
+        </div>
+
+        <!-- Hamburger Button -->
+        <button
+            class="hamburger"
+            id="hamburger"
+            aria-label="Open navigation menu"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <!-- Navigation -->
+        <nav id="mainNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.php">Dashboard</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="feedback.html" aria-current="page">Feedback</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="registration.html">Register</a></li>
+                <li><a href="../php/logout.php">Logout</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main>
+
+        <!-- Page heading -->
+
+        <section class="page-header">
+
+            <h2>Share Your Feedback</h2>
+
+            <p>
+                Tell us what is working and what we can improve.
+                Your feedback helps make Student Hub better for everyone.
+            </p>
+
+        </section>
+
+
+        <!-- ================= FEEDBACK FORM ================= -->
+
+        <section class="feedback-section">
+
+            <div class="form-card">
+
+                <h3>Your feedback</h3>
+
+                <p class="form-note">
+                    Name and email are optional.
+                </p>
+
+                <div
+                    class="form-success"
+                    id="feedbackSuccess"
+                    role="status"
+                    hidden
+                >
+                    Thank you for your feedback! We read every response.
+                </div>
+
+                <form id="feedbackForm" novalidate>
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+                            <label for="feedbackName">Name (optional)</label>
+                            <input
+                                type="text"
+                                id="feedbackName"
+                                name="name"
+                                placeholder="Your name"
+                                autocomplete="name"
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="feedbackEmail">Email (optional)</label>
+                            <input
+                                type="email"
+                                id="feedbackEmail"
+                                name="email"
+                                placeholder="you@example.com"
+                                autocomplete="email"
+                            >
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="feedbackCategory">What is your feedback about?</label>
+                        <select id="feedbackCategory" name="category">
+                            <option value="">Choose a topic</option>
+                            <option value="courses">Courses</option>
+                            <option value="notes">Study notes</option>
+                            <option value="events">Events</option>
+                            <option value="website">Website experience</option>
+                            <option value="other">Something else</option>
+                        </select>
+                    </div>
+
+                    <!-- Star rating: stars are listed 5 to 1 on purpose (CSS shows them 1 to 5) -->
+
+                    <div class="form-group">
+
+                        <span class="field-label" id="ratingLabel">Overall rating</span>
+
+                        <div
+                            class="rating-stars"
+                            role="radiogroup"
+                            aria-labelledby="ratingLabel"
+                        >
+
+                            <input type="radio" id="rating5" name="rating" value="5">
+                            <label for="rating5">★<span class="sr-only">5 stars</span></label>
+
+                            <input type="radio" id="rating4" name="rating" value="4">
+                            <label for="rating4">★<span class="sr-only">4 stars</span></label>
+
+                            <input type="radio" id="rating3" name="rating" value="3">
+                            <label for="rating3">★<span class="sr-only">3 stars</span></label>
+
+                            <input type="radio" id="rating2" name="rating" value="2">
+                            <label for="rating2">★<span class="sr-only">2 stars</span></label>
+
+                            <input type="radio" id="rating1" name="rating" value="1">
+                            <label for="rating1">★<span class="sr-only">1 star</span></label>
+
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="feedbackMessage">Your comments</label>
+                        <textarea
+                            id="feedbackMessage"
+                            name="message"
+                            rows="5"
+                            placeholder="What did you like? What should we improve?"
+                        ></textarea>
+                    </div>
+
+                    <button type="submit" class="btn">
+                        Submit Feedback
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+            &copy; 2026 Student Hub. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

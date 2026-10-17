@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>Student Hub - Login</title>
+
+<link rel="stylesheet" href="../css/style1.css">
+
+
+</head>
+
+<body>
+
+
+<header>
+
+    <div class="logo">
+        <h1>Student Hub</h1>
+    </div>
+
+    <!-- Hamburger Button -->
+    <button class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+     <nav id="mainNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.php">Dashboard</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="contact.html" aria-current="page">Contact</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="registration.html">Register</a></li>
+                <li><a href="../php/logout.php">Logout</a></li>
+            </ul>
+        </nav>
+</header>
+
+
+<main>
+
+    <section class="login-section">
+
+        <div class="login-box">
+
+            <h2>Login</h2>
+
+            <p>Login to access your Student Hub dashboard.</p>
+
+           
+<form id="loginForm" action="../php/login.php" method="POST">
+
+    <div class="form-group">
+        <label for="role">Login As</label>
+        <select id="role" name="role" required>
+            <option value="student">Student</option>
+            <option value="admin">Admin</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            autocomplete="username"
+            required
+        >
+    </div>
+
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter your password"
+            autocomplete="current-password"
+            required
+        >
+    </div>
+
+    <button type="submit" class="btn">Login</button>
+
+</form>
+
+
+
+
+            <p class="register-text">
+    Don't have an account?
+    <a href="#" id="createAccountBtn">Create Account</a>
+</p>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+    <p>&copy; 2026 Student Hub. All rights reserved.</p>
+</footer>
+
+
+<script src="../js/script.js"></script>
+
+
+</body>
+</html>

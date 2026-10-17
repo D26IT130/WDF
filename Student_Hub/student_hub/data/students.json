@@ -1,0 +1,18 @@
+[
+  { "id": 1,  "name": "Aarav Patel",   "email": "aarav.patel@example.com",   "course": "Web Development", "year": 2, "city": "Anand",     "cgpa": 8.4, "status": "Active" },
+  { "id": 2,  "name": "Diya Shah",     "email": "diya.shah@example.com",     "course": "Data Science",    "year": 1, "city": "Vadodara",  "cgpa": 9.1, "status": "Active" },
+  { "id": 3,  "name": "Rohan Mehta",   "email": "rohan.mehta@example.com",   "course": "Cyber Security",  "year": 3, "city": "Surat",     "cgpa": 7.2, "status": "Inactive" },
+  { "id": 4,  "name": "Isha Desai",    "email": "isha.desai@example.com",    "course": "Web Development", "year": 1, "city": "Anand",     "cgpa": 8.8, "status": "Active" },
+  { "id": 5,  "name": "Kunal Joshi",   "email": "kunal.joshi@example.com",   "course": "Cloud Computing", "year": 2, "city": "Ahmedabad", "cgpa": 7.9, "status": "Active" },
+  { "id": 6,  "name": "Meera Trivedi", "email": "meera.trivedi@example.com", "course": "Data Science",    "year": 3, "city": "Rajkot",    "cgpa": 9.4, "status": "Active" },
+  { "id": 7,  "name": "Yash Parmar",   "email": "yash.parmar@example.com",   "course": "Cyber Security",  "year": 2, "city": "Nadiad",    "cgpa": 6.8, "status": "Inactive" },
+  { "id": 8,  "name": "Priya Nair",    "email": "priya.nair@example.com",    "course": "Cloud Computing", "year": 1, "city": "Surat",     "cgpa": 8.1, "status": "Active" },
+  { "id": 9,  "name": "Harsh Vyas",    "email": "harsh.vyas@example.com",    "course": "Web Development", "year": 3, "city": "Vadodara",  "cgpa": 7.6, "status": "Active" },
+  { "id": 10, "name": "Nidhi Bhatt",   "email": "nidhi.bhatt@example.com",   "course": "Data Science",    "year": 2, "city": "Anand",     "cgpa": 8.9, "status": "Active" },
+  { "id": 11, "name": "Jay Solanki",   "email": "jay.solanki@example.com",   "course": "Cyber Security",  "year": 1, "city": "Ahmedabad", "cgpa": 7.4, "status": "Active" },
+  { "id": 12, "name": "Sneha Kapadia", "email": "sneha.kapadia@example.com", "course": "Cloud Computing", "year": 3, "city": "Rajkot",    "cgpa": 9.0, "status": "Inactive" },
+  { "id": 13, "name": "Dev Chauhan",   "email": "dev.chauhan@example.com",   "course": "Web Development", "year": 2, "city": "Nadiad",    "cgpa": 8.0, "status": "Active" },
+  { "id": 14, "name": "Anjali Rana",   "email": "anjali.rana@example.com",   "course": "Data Science",    "year": 1, "city": "Surat",     "cgpa": 8.6, "status": "Active" },
+  { "id": 15, "name": "Vivek Thakkar", "email": "vivek.thakkar@example.com", "course": "Cyber Security",  "year": 3, "city": "Anand",     "cgpa": 7.0, "status": "Active" },
+  { "id": 16, "name": "Pooja Modi",    "email": "pooja.modi@example.com",    "course": "Cloud Computing", "year": 2, "city": "Vadodara",  "cgpa": 8.3, "status": "Active" }
+]

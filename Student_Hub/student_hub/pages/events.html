@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Student Hub - Events</title>
+
+    <link rel="stylesheet" href="../css/style1.css">
+
+</head>
+
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+    <div class="logo">
+
+        <h1>Student Hub</h1>
+
+    </div>
+
+
+    <!-- Hamburger Button -->
+
+    <button
+        class="hamburger"
+        id="hamburger"
+        type="button"
+        aria-label="Open navigation menu"
+    >
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </button>
+
+
+    <!-- Navigation -->
+
+     <nav id="mainNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.php">Dashboard</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="contact.html" aria-current="page">Contact</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="registration.html">Register</a></li>
+                <li><a href="../php/logout.php">Logout</a></li>
+            </ul>
+        </nav>
+
+</header>
+
+
+<!-- ================= MAIN ================= -->
+
+<main>
+
+
+    <!-- Page Header -->
+
+    <section class="page-header">
+
+        <h2>Student Events</h2>
+
+        <p>
+            Discover upcoming workshops, seminars,
+            competitions and student activities.
+        </p>
+
+    </section>
+
+
+    <!-- ================= EVENT CONTROLS ================= -->
+
+    <section class="event-controls">
+
+        <!-- Search -->
+
+        <div class="event-search">
+
+            <label for="eventSearch">
+                Search Events
+            </label>
+
+            <input
+                type="text"
+                id="eventSearch"
+                placeholder="Search by event name..."
+            >
+
+        </div>
+
+
+        <!-- Category Filter -->
+
+        <div class="event-filter">
+
+            <label for="categoryFilter">
+                Category
+            </label>
+
+            <select id="categoryFilter">
+
+                <option value="all">
+                    All Categories
+                </option>
+
+                <option value="Workshop">
+                    Workshop
+                </option>
+
+                <option value="Competition">
+                    Competition
+                </option>
+
+                <option value="Seminar">
+                    Seminar
+                </option>
+
+                <option value="Exhibition">
+                    Exhibition
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <!-- Sorting -->
+
+        <div class="event-sort">
+
+            <label for="sortEvents">
+                Sort
+            </label>
+
+            <select id="sortEvents">
+
+                <option value="default">
+                    Default
+                </option>
+
+                <option value="titleAsc">
+                    Title A-Z
+                </option>
+
+                <option value="titleDesc">
+                    Title Z-A
+                </option>
+
+                <option value="dateAsc">
+                    Date Oldest-Newest
+                </option>
+
+                <option value="dateDesc">
+                    Date Newest-Oldest
+                </option>
+
+            </select>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= LOADING MESSAGE ================= -->
+
+    <div
+        id="eventsLoading"
+        class="events-message"
+    >
+        Loading events...
+    </div>
+
+
+    <!-- ================= ERROR MESSAGE ================= -->
+
+    <div
+        id="eventsError"
+        class="events-message error"
+        style="display: none;"
+    >
+    </div>
+
+
+    <!-- ================= EVENTS ================= -->
+
+    <section
+        class="events"
+        id="eventsContainer"
+    >
+    </section>
+
+
+    <!-- ================= NO RESULTS ================= -->
+
+    <div
+        id="noEvents"
+        class="events-message"
+        style="display: none;"
+    >
+        No events found.
+    </div>
+
+
+    <!-- ================= PAGINATION ================= -->
+
+    <div
+        id="pagination"
+        class="pagination"
+    >
+    </div>
+
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <p>
+        &copy; 2026 Student Hub. All rights reserved.
+    </p>
+
+</footer>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script src="../js/script.js"></script>
+
+<script src="../js/events.js"></script>
+
+
+</body>
+
+</html>
