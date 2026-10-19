@@ -23,5 +23,9 @@ try {
 } catch (mysqli_sql_exception $e) {
     error_log('MySQLi connection failed: ' . $e->getMessage());
     http_response_code(500);
+    if (defined('API_MODE')) {   // JSON endpoints must never answer with plain text
+        header('Content-Type: application/json; charset=utf-8');
+        exit(json_encode(['success' => false, 'message' => 'Could not connect to the database.' . ($mysqliDebug ? ' (' . $e->getMessage() . ')' : '')]));
+    }
     exit('Could not connect to the database.' . ($mysqliDebug ? ' (' . htmlspecialchars($e->getMessage(), ENT_QUOTES, 'UTF-8') . ')' : ''));
 }

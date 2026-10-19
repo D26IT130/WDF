@@ -1,4 +1,5 @@
 <?php
+require_once __DIR__ . '/../php/menu.php';
 require_once __DIR__ . '/../php/auth.php';
 requireRole('admin');
 ?>
@@ -23,19 +24,8 @@ requireRole('admin');
 
     <nav id="mainNav">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="dashboard.php">Dashboard</a></li>
-            <li><a href="admin.php" aria-current="page">Admin</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="feedback.html">Feedback</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="profile.html">Profile</a></li>
-            <li><a href="login.html">Login</a></li>
-            <li><a href="registration.html">Register</a></li>
-                <li><a href="../php/logout.php">Logout</a></li>
-            </ul>
+            <?= menu_render('../') ?>
+        </ul>
     </nav>
 </header>
 
@@ -44,6 +34,8 @@ requireRole('admin');
     <section class="dashboard-header">
         <h2>Student Records</h2>
         <p>Search, filter, sort and browse student data loaded from JSON.</p>
+    
+        <p><a class="btn" href="../php/users/index.php">Manage Users (users table)</a> <a class="btn btn-outline" href="../php/students/index.php">Manage Students</a> <a class="btn" href="../php/events/index.php">Manage Events</a> <a class="btn btn-outline" href="api-manager.php">API Manager (Fetch)</a></p>
     </section>
 
     <section class="stu-section">

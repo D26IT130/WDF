@@ -1,0 +1,51 @@
+/* API Manager page - builds on style1.css + students-crud.css */
+
+/* make the HTML "hidden" attribute always win over display: flex / grid */
+[hidden] { display: none !important; }
+
+.api-tabs { display: flex; gap: .5rem; margin-bottom: 1rem; }
+.api-tab {
+    padding: .55rem 1.2rem; border: 1px solid var(--border); border-radius: 8px;
+    background: var(--surface); color: var(--text-dark); font-weight: 600; cursor: pointer;
+}
+.api-tab.active { background: var(--primary); border-color: var(--primary); color: #fff; }
+
+.api-form-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 1.25rem; grid-column: 1 / -1; }
+.api-form-title { grid-column: 1 / -1; margin: 0; }
+.api-form-actions { grid-column: 1 / -1; }
+.api-field-wide { grid-column: 1 / -1; }
+.api-form textarea {
+    width: 100%; padding: .65rem .8rem; border: 1px solid var(--input-border); border-radius: 8px;
+    background: var(--input-bg); color: var(--text-dark); font: inherit; box-sizing: border-box; resize: vertical;
+}
+.api-field-invalid input, .api-field-invalid select, .api-field-invalid textarea { border-color: var(--danger); }
+
+.api-filters { grid-template-columns: 2fr repeat(3, 1fr) auto; }
+.api-table-wrap { position: relative; min-height: 120px; }
+.api-loading {
+    position: absolute; inset: 0; z-index: 2; display: flex; align-items: center; justify-content: center; gap: .6rem;
+    background: color-mix(in srgb, var(--surface) 80%, transparent); color: var(--text-dark); font-weight: 600;
+}
+.api-spinner {
+    width: 1.2rem; height: 1.2rem; border: 3px solid var(--border); border-top-color: var(--primary);
+    border-radius: 50%; animation: api-spin .8s linear infinite;
+}
+@keyframes api-spin { to { transform: rotate(360deg); } }
+
+.api-thumb { width: 44px; height: 44px; object-fit: cover; border-radius: 6px; }
+.api-badge { display: inline-block; padding: .15rem .55rem; border-radius: 999px; font-size: .8rem; font-weight: 600;
+             background: var(--primary-soft); color: var(--text-dark); }
+button.crud-link { background: none; border: 0; padding: 0; font: inherit; cursor: pointer; }
+
+.api-log { margin-top: 1.5rem; background: var(--surface); border-radius: var(--radius); box-shadow: var(--shadow); padding: .8rem 1.2rem; color: var(--text-dark); }
+.api-log summary { cursor: pointer; font-weight: 600; }
+.api-log pre { overflow-x: auto; white-space: pre-wrap; word-break: break-word; margin: .8rem 0 0; font-size: .85rem; }
+.crud-pagination button {
+    padding: .45rem .8rem; border: 1px solid var(--border); border-radius: 8px; background: var(--surface);
+    color: var(--text-dark); cursor: pointer; font: inherit;
+}
+.crud-pagination button.active { background: var(--primary); color: #fff; border-color: var(--primary); }
+.crud-pagination button:disabled { opacity: .5; cursor: default; }
+
+@media (max-width: 900px) { .api-filters { grid-template-columns: 1fr 1fr; } .api-filters .crud-field-wide { grid-column: 1 / -1; } }
+@media (max-width: 640px) { .api-form-fields, .api-filters { grid-template-columns: 1fr; } }

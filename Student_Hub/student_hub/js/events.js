@@ -63,7 +63,7 @@ async function fetchEvents() {
         // Fetch JSON file
 
         const response =
-            await fetch("../data/events.json");
+            await fetch("../php/events_json.php");
 
 
         // Check response
@@ -221,7 +221,7 @@ function processEvents() {
 
         result.sort(function (a, b) {
 
-            return a.id - b.id;
+            return a.sortDate.localeCompare(b.sortDate);
 
         });
 
@@ -232,7 +232,7 @@ function processEvents() {
 
         result.sort(function (a, b) {
 
-            return b.id - a.id;
+            return b.sortDate.localeCompare(a.sortDate);
 
         });
 
@@ -319,6 +319,14 @@ function renderEvents() {
         eventCard.className = "event-card";
 
 
+        // Poster (optional) and status come from the database
+        const posterHtml = event.poster
+            ? `<img src="${event.poster}" alt="Poster for ${event.title}" style="width:100%;max-height:220px;object-fit:cover;border-radius:8px;margin-bottom:.6rem;">`
+            : "";
+        const statusHtml = event.status
+            ? `<span class="event-category" style="margin-left:.4rem;">${event.status}</span>`
+            : "";
+
         eventCard.innerHTML = `
 
             <div class="event-date">
@@ -336,9 +344,11 @@ function renderEvents() {
 
             <div class="event-info">
 
+                ${posterHtml}
                 <span class="event-category">
                     ${event.category}
                 </span>
+                ${statusHtml}
 
                 <h3>
                     ${event.title}
@@ -384,6 +394,46 @@ function renderEvents() {
 // REGISTER BUTTON
 // ============================================
 
+// Sends the registration to the server (php/api/register_event.php)
+async function registerForEvent(selectedEvent) {
+
+    try {
+
+        // 1) security token (needs a logged-in user)
+        const tokenRes = await fetch("../php/api/csrf.php", { credentials: "same-origin" });
+
+        if (tokenRes.status === 401) {
+            alert("Please log in to register for an event.");
+            window.location.href = "login.html";
+            return;
+        }
+
+        const token = (await tokenRes.json()).data.csrf;
+
+        // 2) register
+        const res = await fetch("../php/api/register_event.php", {
+            method: "POST",
+            credentials: "same-origin",
+            headers: {
+                "Content-Type": "application/json",
+                "Accept": "application/json",
+                "X-CSRF-Token": token
+            },
+            body: JSON.stringify({ event_id: selectedEvent.id })
+        });
+
+        const result = await res.json();
+        alert(result.message);
+
+    } catch (error) {
+
+        alert("Could not register right now. Please try again.");
+
+    }
+
+}
+
+
 function addRegisterEvents() {
 
     const registerButtons =
@@ -414,10 +464,7 @@ function addRegisterEvents() {
 
                 if (selectedEvent) {
 
-                    alert(
-                        "You selected: " +
-                        selectedEvent.title
-                    );
+                    registerForEvent(selectedEvent);
 
                 }
 

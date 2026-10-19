@@ -1,0 +1,5 @@
+# Uploaded posters must never be executed as code
+<FilesMatch "\.(php|phtml|php3|php4|php5|php7|phps|phar|pl|py|cgi|sh)$">
+    Require all denied
+</FilesMatch>
+Options -ExecCGI -Indexes

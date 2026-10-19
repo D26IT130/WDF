@@ -1,4 +1,5 @@
 <?php
+require_once __DIR__ . '/../php/menu.php';
 require_once __DIR__ . '/../php/auth.php';
 requireRole('student');
 ?>
@@ -30,18 +31,8 @@ requireRole('student');
 
      <nav id="mainNav">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="dashboard.php">Dashboard</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="feedback.html">Feedback</a></li>
-                <li><a href="contact.html" aria-current="page">Contact</a></li>
-                <li><a href="profile.html">Profile</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="registration.html">Register</a></li>
-                <li><a href="../php/logout.php">Logout</a></li>
-            </ul>
+            <?= menu_render('../') ?>
+        </ul>
         </nav>
 
 </header>

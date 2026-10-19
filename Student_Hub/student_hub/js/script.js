@@ -576,3 +576,41 @@ if (feedbackForm) {
 
     clearErrorsOnEdit(feedbackForm);
 }
+
+
+/* =========================================================
+   12. ROLE-BASED NAVBAR
+   The menu is defined once on the server (php/menu.php) for
+   guest / student / admin. Static .html pages ask php/menu_json.php
+   and rebuild the menu list, so every page shows the same links.
+   If the request fails, the menu written in the HTML stays.
+   ========================================================= */
+
+(function () {
+    const navList = document.querySelector("#mainNav ul");
+    if (!navList || !document.currentScript) return;
+
+    // e.g. http://localhost/student_hub/js/script.js -> http://localhost/student_hub/
+    const root = document.currentScript.src.replace(/js\/script\.js.*$/, "");
+
+    fetch(root + "php/menu_json.php", { credentials: "same-origin", cache: "no-store" })
+        .then(function (res) { return res.ok ? res.json() : null; })
+        .then(function (info) {
+            if (!info || !Array.isArray(info.menu)) return;
+
+            const items = info.menu.map(function (item) {
+                const li = document.createElement("li");
+                const a = document.createElement("a");
+                a.textContent = item.label;
+                a.href = root + item.path;
+                if (a.pathname === window.location.pathname) {
+                    a.setAttribute("aria-current", "page");
+                }
+                a.addEventListener("click", closeMenu);   // closes the mobile menu
+                li.appendChild(a);
+                return li;
+            });
+            navList.replaceChildren.apply(navList, items);
+        })
+        .catch(function () { /* keep the static menu */ });
+})();

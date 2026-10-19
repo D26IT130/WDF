@@ -1,8 +1,8 @@
-
 <?php
 session_start();
 
 require_once __DIR__ . '/db_mysqli.php';
+require_once __DIR__ . '/audit.php';
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     header('Location: ../pages/login.html');
@@ -42,6 +42,8 @@ if (
     !password_verify($password, $user['password_hash']) ||
     $user['role'] !== $requestedRole
 ) {
+    audit_log($conn, 'LOGIN_FAILED', 'session', $user ? (int) $user['id'] : null,
+        'Failed login for ' . $email . ' (as ' . $requestedRole . ')', null, $user['full_name'] ?? $email, null);
     http_response_code(401);
     exit('Incorrect email, password, or account type.');
 }
@@ -54,8 +56,10 @@ $_SESSION['full_name'] = $user['full_name'];
 $_SESSION['email'] = $user['email'];
 $_SESSION['role'] = $user['role'];
 
+audit_log($conn, 'LOGIN', 'session', (int) $user['id'], ucfirst($user['role']) . ' logged in');
+
 if ($user['role'] === 'admin') {
-    header('Location: ../pages/admin.php');
+    header('Location: ../pages/admin-dashboard.php');
 } else {
     header('Location: ../pages/dashboard.php');
 }
